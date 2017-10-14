@@ -1,51 +1,35 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
-import { RouterModule } from '@angular/router';
 
 import { AppComponent } from './app.component';
-import { DashboardComponent } from './dashboard.component';
-import { HeroesComponent } from './heroes.component';
-import { HeroDetailComponent } from './hero-detail.component';
-import { HeroService } from './hero.service';
+import { MenuComponent } from './menu/menu.component';
+import { HomeComponent } from './home/home.component';
+import { CvComponent } from './cv/cv.component';
+import { FormationComponent } from './cv/formation/formation.component';
+import { ExperienceComponent } from './cv/experience/experience.component';
 
 // Animations
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-// import { MdButtonModule, MdCheckboxModule } from '@angular/material';
+import { MatButtonModule, MatToolbarModule, MatSidenavModule, MatGridListModule, MatIconModule } from '@angular/material';
+
+// Routes
+import { AppRoutingModule } from './app.routing';
 
 @NgModule({
-    declarations: [
-        AppComponent,
-        DashboardComponent,
-        HeroesComponent,
-        HeroDetailComponent
-    ],
     imports: [
         BrowserModule,
+        AppRoutingModule,
         FormsModule,
-        RouterModule.forRoot([
-            {
-                path: '',
-                redirectTo: '/dashboard',
-                pathMatch: 'full'
-            },
-            {
-                path: 'dashboard',
-                component: DashboardComponent
-            },
-            {
-                path: 'heroes',
-                component: HeroesComponent
-            },
-            {
-                path: 'detail/:id',
-                component: HeroDetailComponent
-            },
-        ]),
         BrowserAnimationsModule,
-        // MdButtonModule, MdCheckboxModule
+        MatButtonModule, MatToolbarModule, MatSidenavModule, MatGridListModule, MatIconModule,
     ],
-    providers: [HeroService],
+    declarations: [
+        AppComponent,
+        HomeComponent,
+        MenuComponent,
+        CvComponent, FormationComponent, ExperienceComponent,
+    ],
     bootstrap: [AppComponent]
 })
 export class AppModule { }
