@@ -11,7 +11,7 @@ import { HeroService } from './hero.service';
 
 // Animations
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { MdButtonModule, MdCheckboxModule } from '@angular/material';
+// import { MdButtonModule, MdCheckboxModule } from '@angular/material';
 
 @NgModule({
     declarations: [
@@ -43,7 +43,7 @@ import { MdButtonModule, MdCheckboxModule } from '@angular/material';
             },
         ]),
         BrowserAnimationsModule,
-        MdButtonModule, MdCheckboxModule
+        // MdButtonModule, MdCheckboxModule
     ],
     providers: [HeroService],
     bootstrap: [AppComponent]
