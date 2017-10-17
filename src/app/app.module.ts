@@ -6,12 +6,17 @@ import { AppComponent } from './app.component';
 import { MenuComponent } from './menu/menu.component';
 import { HomeComponent } from './home/home.component';
 import { CvComponent } from './cv/cv.component';
-import { FormationComponent } from './cv/formation/formation.component';
+import { ProfileComponent } from './cv/profile/profile.component';
+import { EducationComponent } from './cv/education/education.component';
 import { ExperienceComponent } from './cv/experience/experience.component';
+import { LanguagesComponent } from './cv/languages/languages.component';
+import { InterestsComponent } from './cv/interests/interests.component';
 
 // Animations
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { MatButtonModule, MatToolbarModule, MatSidenavModule, MatGridListModule, MatIconModule } from '@angular/material';
+
+// Material
+import { MaterialModule } from './app.material';
 
 // Routes
 import { AppRoutingModule } from './app.routing';
@@ -22,13 +27,13 @@ import { AppRoutingModule } from './app.routing';
         AppRoutingModule,
         FormsModule,
         BrowserAnimationsModule,
-        MatButtonModule, MatToolbarModule, MatSidenavModule, MatGridListModule, MatIconModule,
+        MaterialModule,
     ],
     declarations: [
         AppComponent,
         HomeComponent,
         MenuComponent,
-        CvComponent, FormationComponent, ExperienceComponent,
+        CvComponent, ProfileComponent, EducationComponent, ExperienceComponent, LanguagesComponent, InterestsComponent,
     ],
     bootstrap: [AppComponent]
 })

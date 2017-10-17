@@ -1,0 +1,11 @@
+.menu-spacer {
+  flex: 1 1 auto;
+}
+
+mat-sidenav {
+  width: 200px;
+}
+
+section {
+  margin: 50px;
+}
