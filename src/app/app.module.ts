@@ -3,9 +3,7 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
-import { MenuComponent } from './menu/menu.component';
 import { HomeComponent } from './home/home.component';
-import { CvComponent } from './cv/cv.component';
 import { ProfileComponent } from './cv/profile/profile.component';
 import { EducationComponent } from './cv/education/education.component';
 import { ExperienceComponent } from './cv/experience/experience.component';
@@ -32,8 +30,7 @@ import { AppRoutingModule } from './app.routing';
     declarations: [
         AppComponent,
         HomeComponent,
-        MenuComponent,
-        CvComponent, ProfileComponent, EducationComponent, ExperienceComponent, LanguagesComponent, InterestsComponent,
+        ProfileComponent, EducationComponent, ExperienceComponent, LanguagesComponent, InterestsComponent,
     ],
     bootstrap: [AppComponent]
 })
